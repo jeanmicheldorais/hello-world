@@ -1,2 +1,2 @@
 # hello-world
-I dont understand github
+This is a test to see if I understand github
