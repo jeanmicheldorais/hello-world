@@ -1,0 +1,28 @@
+body {
+  background-color: #D0D0D0;
+}
+
+a {
+	color: #0000C0;
+}
+
+p {
+
+}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: capitalize;
+
+}
+
+.list1 {
+	list-style-type: square;
+}
+
+.top-menu {
+	margin-right: 5%;
+	display: inline;
+}
+
+#index-menu {
+	margin-left: -28px;
+}

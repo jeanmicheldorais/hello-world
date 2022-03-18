@@ -2,6 +2,20 @@
 <html lang="en">
 <head>
 <title>Personal interests</title>
+<link rel="stylesheet" href="style.css">
+<style>
+table {
+border: 1px solid;
+}
+th, td {
+border: 1px solid;
+padding: 1%;
+}
+.top-table{
+background-color: lightblue;
+}
+
+</style>
 </head>
 <body>
 
@@ -9,10 +23,10 @@
 <header>
 <nav>
 <ul>
-<li><a href="index.html">Index</a></li>
-<li><a href="access.html">Accessibility</a></li>
-<li><a href="work.html">Work experience</a></li>
-<li><a href="perso.html">Personal interests</a></li>
+<li class="top-menu" id="index-menu"><a href="index.html">Index</a></li>
+<li class="top-menu"><a href="access.html">Accessibility</a></li>
+<li class="top-menu"><a href="work.html">Work experience</a></li>
+<li class="top-menu"><a href="perso.html">Personal interests</a></li>
 </ul>
 </nav>
 </header>
@@ -27,7 +41,7 @@
 
 <!-- test for informative image -->
 
-<img src="informative_image.jpg" alt="a orange cat, Adrian, and a black cat, Jeane, resting on my couch" width="800" />
+<img src="informative_image.jpg" alt="a orange cat, Adrian, and a black cat, Jeane, resting on my couch" style="width:45%; border:3px solid;" />
 
 <p>I enjoy cooking, and I try to train to keep myself in shape. Recently I have been doing some climbing and biking.</p>
 
@@ -35,8 +49,8 @@
 
 <!-- table and links for testing -->
 
-<table border="1">
-  <tr>
+<table>
+  <tr class="top-table">
     <th>Media</th>
     <th>Favorite Genre</th>
     <th>Favorite One</th>
@@ -70,7 +84,7 @@
 <!-- footer of the page is located here -->
 
 <footer>
-<p>The information on the website will be update to unsure that I understand accessibility and Github.</p>
+<p style="font-size:20px;">The information on the website will be update to unsure that I understand accessibility and Github.</p>
 </footer>
 
 </body>
