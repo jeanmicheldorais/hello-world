@@ -32,17 +32,17 @@
 
 <!-- form for testing -->
 
-<form>
+<form onsubmit="FormSent();return false;">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname"><br>
-  <br >
-<fieldset>  
+  <br />
+<fieldset id="fav_language">  
 <legend>Where was your first job?</legend>
-  <input type="radio" id="html" name="fav_language" value="HTML">
+  <input type="radio" id="html" name="fav_language" value="within the government">
   <label for="html">Within the government</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="fav_language" value="outside the government">
   <label for="css">Outside the government</label><br>
 </fieldset>
 
@@ -55,6 +55,10 @@
   
 </form>
 
+<div id="responsebox">
+
+</div>
+
 <hr />
 
 </main>
@@ -65,5 +69,6 @@
 <p>The information on the website will be update to unsure that I understand accessibility and Github.</p>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
