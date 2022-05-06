@@ -14,6 +14,28 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.skipmodal {
+	background-color: black;
+	position: fixed;
+	color: white;
+	z-index: 1;
+	
+	left: 0;
+	top: 0;
+	margin-left:99%;
+	
+}
+.skipmodal>p>a {
+
+	color: white;
+
+	
+}
+
+.hidden {
+	display: none;
+}
+
 .list1 {
 	list-style-type: square;
 }

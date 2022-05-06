@@ -9,6 +9,11 @@
 <!-- Header and navigation -->
 <header>
 <nav>
+
+<div id="skipmodal" class="skipmodal">
+<p><a href="#main" id="focusedElement">Skip to main content</a></p>
+</div>
+
 <ul>
 <li class="top-menu"><a href="index.html">Index</a></li>
 <li class="top-menu"><a href="access.html">Accessibility</a></li>
@@ -20,7 +25,7 @@
 
 <!-- main content of the page is located here -->
 
-<main>
+<main id="main">
 <h1>Work experience</h1>
 
 
@@ -34,9 +39,15 @@
 
 <form onsubmit="FormSent();return false;">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
+  <input type="text" id="fname" name="fname" aria-describedby="intructions1"><br>
+  
+  <p id="intructions1">Please provide your first name.</p>
+  
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
+  <input type="text" id="lname" name="lname" aria-describedby="intructions2"><br>
+  
+  <p id="intructions2">Please provide your last name.</p>
+  
   <br />
 <fieldset id="fav_language">  
 <legend>Where was your first job?</legend>
@@ -49,8 +60,10 @@
 <br />
  
   <label for="depart">Current Department:</label><br>
-  <input type="text" id="depart" name="depart"><br />
+  <input type="text" id="depart" name="depart" aria-describedby="intructions3"><br />
   
+  <p id="intructions3">Please provide the department that you are working for right now.</p>
+ 
   <input type="submit" value="Submit">
   
 </form>
